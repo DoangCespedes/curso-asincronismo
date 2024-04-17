@@ -79,3 +79,28 @@ Cuando una promesa se resuelve entonces se ejecuta la función que pasamos al m�
 Rechazada rejected → significa que la operación falló, .catch(err => …)
 Si llamamos a reject pasa a estar rechazada (obtenemos un error que nos va a indicar la razón del rechazo).
 Si la promesa es rechazada entonces se ejecuta la función que pasamos a .catch .
+
+======================================================================================================
+
+🎢 𝗖𝗹𝗮𝘀𝗲 #𝟭𝟯: 𝗙𝘂𝗻𝗰𝗶𝗼𝗻𝗲𝘀 𝗮𝘀í𝗻𝗰𝗿𝗼𝗻𝗮𝘀 𝟭𝟯/𝟮𝟭 🎢 . 🔁 ++¿Qué es una función asíncrona?++ . La declaración de función ++async++ define una función asíncrona que devuelve un objeto, lo cual permite a un programa correr una función sin congelar todo la compilación. Dada que la finalidad de las funciones async/await es simplificar el comportamiento del uso síncrono de promesas, se hace más fácil escribir promesas. . 🔏 La estructura se compone por las palabras reservadas async y await: .
+
+La palabra async antes de la función, hace que la función devuelva una promesa.
+La palabra await se utiliza dentro de las funciones async, lo que hace que el programa espere hasta que la variable(promesa) se resuelva para continuar. .
+✏️ ++Ejemplo con código:++ .
+
+Ir a VSC, crear dentro de la carpeta src una carpeta llamada ++async++.
+En la ruta src/async crear el archivo ++index.js++
+Dentro del archivo index.js, se crea la promesa y luego se valida si la promesa se resolverá, también se hace el llamado de la misma y luego se busca mostrar como se desenvuelve con await. En el ejemplo se usa el if ternario. .
+
+🚥 ++¿Qué es un operador if ternario?++ . El operador ternario consta de 3 partes: condición ? expresión1 : expresión2;
+
+La primera es la lógica, se evalúa una condición.
+La segunda parte está después del signo de cierre de interrogación ?, ésta se ejecuta solo si la condición es verdadera true.
+La tercera parte está después del símbolo de dos puntos :, ésta se ejecuta solo si la condición resulta falsa false.
+Fuente: aquí Ejemplo:
+
+
+var a = 5;
+var b = 3;
+var c = a > b ? "Es mayor" : "Es menor";
+//Si la condición después del símbolo igual (=) se cumple, entonces se tendrá el valor: “Es mayor”, de lo contrario tomará el valor: “Es menor”.
